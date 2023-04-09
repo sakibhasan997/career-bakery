@@ -1,20 +1,36 @@
 import React, { Children } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './component/Home/Home';
+import Home from './component/Home';
+import App from './App';
+import Statistics from './component/Statistics';
+import AppliedJobs from './component/AppliedJobs';
+import Blog from './component/Blog';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <App/>,
     children: [
       {
-
+        path: '/',
+        element: <Home/>
+      },
+      {
+        path: '/statistics',
+        element: <Statistics/>
+      },
+      {
+        path: '/appliedjobs',
+        element: <AppliedJobs/>
+      },
+      {
+        path: '/blogs',
+        element: <Blog/>
       },
     ]
   },

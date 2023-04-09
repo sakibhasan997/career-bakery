@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+
+
+.my-container {
+    @apply max-w-[1320px] mx-auto
+}
+
+.my-btn{
+    @apply bg-gradient-to-r from-sky-500 to-indigo-500 border-blue-600 font-extrabold text-gray-50 text-base lg:text-xl py-4 px-5 rounded-xl
+}
