@@ -1,0 +1,112 @@
+ [
+      {
+        "id": "job001",
+        "company_logo": "https://cdn-icons-png.flaticon.com/512/5968/5968863.png",
+        "job_title": "Software Engineer",
+        "company_name": "Example Company",
+        "remote_or_onsite": "Remote",
+        "location": "Anywhere",
+        "fulltime_or_partTime": "Full-time",
+        "salary": "Competitive",
+        "job_description": "We're looking for a talented software engineer to join our team and help us develop innovative solutions for our clients.",
+        "job_responsibility": "Design, develop, and maintain software applications; collaborate with cross-functional teams to identify and solve complex problems.",
+        "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field.",
+        "experiences": "Minimum of 3 years of experience in software development.",
+        "contact_info": {
+          "phone": "123-456-7890",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": "job002",
+        "company_logo": "https://cdn-icons-png.flaticon.com/512/5977/5977590.png",
+        "job_title": "Data Analyst",
+        "company_name": "Example Company",
+        "remote_or_onsite": "Onsite",
+        "location": "New York, NY",
+        "fulltime_or_partTime": "Full-time",
+        "salary": "80,000-100,000",
+        "job_description": "We're looking for a data analyst to join our team and help us analyze and interpret complex data sets.",
+        "job_responsibility": "Collect and analyze data to identify trends and insights; develop and maintain databases and data systems.",
+        "educational_requirements": "Bachelor's or Master's degree in Statistics, Mathematics, or a related field.",
+        "experiences": "Minimum of 2 years of experience in data analysis.",
+        "contact_info": {
+          "phone": "123-456-7890",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": "job003",
+        "company_logo": "https://cdn-icons-png.flaticon.com/512/3800/3800024.png",
+        "job_title": "Marketing Manager",
+        "company_name": "Example Company",
+        "remote_or_onsite": "Onsite",
+        "location": "Los Angeles, CA",
+        "fulltime_or_partTime": "Full-time",
+        "salary": "80,000-100,000",
+        "job_description": "We're looking for a marketing manager to join our team and help us develop and execute marketing strategies.",
+        "job_responsibility": "Develop and execute marketing campaigns; analyze market trends and insights; collaborate with cross-functional teams to achieve business objectives.",
+        "educational_requirements": "Bachelor's or Master's degree in Marketing, Business Administration, or a related field.",
+        "experiences": "Minimum of 5 years of experience in marketing management.",
+        "contact_info": {
+          "phone": "123-456-7890",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": "job003",
+        "company_logo": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        "job_title": "Marketing Manager",
+        "company_name": "Example Company",
+        "remote_or_onsite": "Onsite",
+        "location": "Los Angeles, CA",
+        "fulltime_or_partTime": "Full-time",
+        "salary": "80,000-100,000",
+        "job_description": "We're looking for a marketing manager to join our team and help us develop and execute marketing strategies.",
+        "job_responsibility": "Develop and execute marketing campaigns; analyze market trends and insights; collaborate with cross-functional teams to achieve business objectives.",
+        "educational_requirements": "Bachelor's or Master's degree in Marketing, Business Administration, or a related field.",
+        "experiences": "Minimum of 5 years of experience in marketing management.",
+        "contact_info": {
+          "phone": "123-456-7890",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": "job002",
+        "company_logo": "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+        "job_title": "Data Analyst",
+        "company_name": "Example Company",
+        "remote_or_onsite": "Onsite",
+        "location": "New York, NY",
+        "fulltime_or_partTime": "Full-time",
+        "salary": "80,000-100,000",
+        "job_description": "We're looking for a data analyst to join our team and help us analyze and interpret complex data sets.",
+        "job_responsibility": "Collect and analyze data to identify trends and insights; develop and maintain databases and data systems.",
+        "educational_requirements": "Bachelor's or Master's degree in Statistics, Mathematics, or a related field.",
+        "experiences": "Minimum of 2 years of experience in data analysis.",
+        "contact_info": {
+          "phone": "123-456-7890",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": "job001",
+        "company_logo": "https://cdn-icons-png.flaticon.com/512/732/732221.png",
+        "job_title": "Software Engineer",
+        "company_name": "Example Company",
+        "remote_or_onsite": "Remote",
+        "location": "Anywhere",
+        "fulltime_or_partTime": "Full-time",
+        "salary": "Competitive",
+        "job_description": "We're looking for a talented software engineer to join our team and help us develop innovative solutions for our clients.",
+        "job_responsibility": "Design, develop, and maintain software applications; collaborate with cross-functional teams to identify and solve complex problems.",
+        "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field.",
+        "experiences": "Minimum of 3 years of experience in software development.",
+        "contact_info": {
+          "phone": "123-456-7890",
+          "email": "jobs@example.com"
+        }
+      }
+ ]
+      
+  
