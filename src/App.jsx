@@ -12,7 +12,9 @@ function App() {
     <>
       <div className=''>
         <div>
-          <Navbar></Navbar>
+          <div className='bg-blue-100 py-5'>
+            <Navbar></Navbar>
+          </div>
           <Outlet />
           <Footer></Footer>
         </div>
