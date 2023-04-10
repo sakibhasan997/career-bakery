@@ -16,7 +16,9 @@ function App() {
             <Navbar></Navbar>
           </div>
           <Outlet />
-          <Footer></Footer>
+          <div className='  bg-[#1A1919] flex flex-col justify-center items-center '>
+            <Footer></Footer>
+          </div>
         </div>
       </div>
     </>
