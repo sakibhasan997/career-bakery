@@ -11,8 +11,8 @@ const Category = ({ category }) => {
                         <img className='w-10 h-10' src={category_logo} alt="" />
                     </div>
                     <div className="description mt-6">
-                        <h3 className='font-extrabold text-xl color-[#474747]'>{category_name}</h3>
-                        <p className='font-medium text-base color-[ #A3A3A3]'>{jobs_available}</p>
+                        <h3 className='font-bold text-xl text-[#474747]'>{category_name}</h3>
+                        <p className='font-medium text-base text-[#A3A3A3]'>{jobs_available}</p>
                     </div>
                 </div>
             </div>

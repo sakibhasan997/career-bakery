@@ -1,0 +1,10 @@
+.my-linear {
+    background: linear-gradient(90deg, #6e7eeb 0%, #c65adb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    border: 2px solid rgb(197, 193, 193);
+    padding: 1px 5px;
+    border-radius: 8px;
+}
