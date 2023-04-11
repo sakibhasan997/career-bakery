@@ -3,21 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 
 const CartDetails = () => {
 
-    // const featuredCart = useLoaderData();
-    // // console.log(featuredCart);
-    // const jobDetails = useParams()
-    // // console.log(jobDetails);
-
-    // const [details, setDetails] = useState({})
-
-    // useEffect(() => {
-    //             const jobData = featuredCart.find((feature) => feature.id === jobDetails);
-    //             setDetails(jobData);
-    // }, [])
-
-    // console.log(details);
-    // const details = useLoaderData()
-    // console.log(details);
+   
 
     const [details, setDetails] = useState([]);
     const dynamic = useParams();
