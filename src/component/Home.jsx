@@ -23,6 +23,9 @@ const Home = () => {
     }, [])
     // category data load end
 
+
+    
+
     return (
         <>
             <div className=" ">
@@ -52,14 +55,14 @@ const Home = () => {
                         </div>
                         <div className="featuredCart grid grid-cols-1 lg:grid-cols-2 gap-6">
                             {
-                                cardData.map((fCard) => (<FeaturedCart
+                                cardData.map(fCard => (<FeaturedCart
                                 key={fCard.id}
                                 fCard={fCard}
                                 ></FeaturedCart>))
                             }
                         </div>
                         <div className="featuredBtn text-center mt-10 mb-32">
-                            <button className='my-btn' onClick={()=>navigate('/blogs')} >See All Cart</button>
+                            <button className='my-btn' >See All Cart</button>
                         </div>
                     </div>
                 </section>

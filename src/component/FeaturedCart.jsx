@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 
 const FeaturedCart = ({ fCard }) => {
-    const { company_logo, job_title, remote_or_onsite, location, fulltime_or_partTime, company_name, location_img } = fCard
+    const { id, company_logo, job_title, remote_or_onsite, location, fulltime_or_partTime, company_name, location_img } = fCard
+
+    const navigate = useNavigate()
+    
+
     return (
         <>
             <div className="main border-2 py-8 px-10 rounded-lg">
@@ -19,7 +24,9 @@ const FeaturedCart = ({ fCard }) => {
                         <img className='w-5 h-5' src={location_img} alt="" />
                         <p className='font-semibold text-xl text-[#757575]'>{location}</p>
                     </div>
-                    <button className='my-btn my-4'>View Details</button>
+                    
+                        <button onClick={()=>navigate(`/cartDetails/${id}`)} className='my-btn my-4'>View Details</button>
+                    
                 </div>
             </div>
         </>
