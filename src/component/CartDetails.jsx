@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../utils/fakeDB';
 
-const CartDetails = () => {
+const CartDetails = ({ }) => {
 
-   
+    // handle add to card
+    const applyCartHandle = (id) => {
+        console.log(id);
+        addToDb(id)
+    }
 
     const [details, setDetails] = useState([]);
     const dynamic = useParams();
@@ -13,7 +18,7 @@ const CartDetails = () => {
         const detailsData = data.find((dt) => dt.id === dynamicId);
         setDetails(detailsData)
     }, [])
-    const { id, job_description, job_responsibility, educational_requirements, location, experiences, company_name, contact_info, job_title, salary,email,phone } = details
+    const { id, job_description, job_responsibility, educational_requirements, location, experiences, company_name, contact_info, job_title, salary, email, phone } = details
 
     return (
         <>
@@ -64,7 +69,9 @@ const CartDetails = () => {
                             <p><span className='font-bold text-lg text-[#1A1919]'>Address: </span>  <span className='font-semibold text-lg text-[#757575]'>{location}</span></p>
                         </div>
                         <div className='w-3/4 mx-auto'>
-                            <button className='my-btn w-full my-2'>Apply Now</button>
+                            <Link to='/appliedjobs'>
+                                <button onClick={() => applyCartHandle(id)} className='my-btn w-full my-2'>Apply Now</button>
+                            </Link>
                         </div>
 
                     </div>

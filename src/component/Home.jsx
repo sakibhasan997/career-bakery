@@ -6,9 +6,12 @@ import FeaturedCart from './FeaturedCart';
 
 const Home = () => {
 
+    const [seeAllCart, setSeeAllCart] = useState(4);
+    const btnHandler = () => {
+        setSeeAllCart(pNumber => pNumber + 2)
+    }
 
-
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     // Featured data load start 
     const cardData = useLoaderData();
@@ -23,8 +26,8 @@ const Home = () => {
     }, [])
     // category data load end
 
-
     
+
 
     return (
         <>
@@ -55,14 +58,15 @@ const Home = () => {
                         </div>
                         <div className="featuredCart grid grid-cols-1 lg:grid-cols-2 gap-6">
                             {
-                                cardData.map(fCard => (<FeaturedCart
-                                key={fCard.id}
-                                fCard={fCard}
+                                cardData.slice(0, seeAllCart).map(fCard => (<FeaturedCart
+                                    key={fCard.id}
+                                    fCard={fCard}
+                                    
                                 ></FeaturedCart>))
                             }
                         </div>
                         <div className="featuredBtn text-center mt-10 mb-32">
-                            <button className='my-btn' >See All Cart</button>
+                            <button onClick={btnHandler} className='my-btn' >See All Cart</button>
                         </div>
                     </div>
                 </section>
