@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { addToDb } from '../utils/fakeDB';
 
 const CartDetails = ({ }) => {
 
+    // const navigate = useNavigate()
+    // const handleApplied = () =>{
+    //     navigate('/appliedJobs')
+    // }
+    // onClick={handleApplied}
+
     // handle add to card
     const applyCartHandle = (id) => {
-        console.log(id);
         addToDb(id)
     }
 
@@ -69,9 +74,9 @@ const CartDetails = ({ }) => {
                             <p><span className='font-bold text-lg text-[#1A1919]'>Address: </span>  <span className='font-semibold text-lg text-[#757575]'>{location}</span></p>
                         </div>
                         <div className='w-3/4 mx-auto'>
-                            <Link to='/appliedjobs'>
+                            <span>
                                 <button onClick={() => applyCartHandle(id)} className='my-btn w-full my-2'>Apply Now</button>
-                            </Link>
+                            </span>
                         </div>
 
                     </div>
@@ -83,11 +88,3 @@ const CartDetails = ({ }) => {
 };
 
 export default CartDetails;
-{/* <p>
-                                <span className='font-bold text-lg text-[#1A1919]'>Phone: </span>
-                                <span className='font-semibold text-lg text-[#757575]'>{contact_info.phone}</span>
-                            </p>
-                            <p>
-                                <span className='font-bold text-lg text-[#1A1919]'>Email: </span>
-                                <span className='font-semibold text-lg text-[#757575]'>{contact_info.email}</span>
-                            </p> */}

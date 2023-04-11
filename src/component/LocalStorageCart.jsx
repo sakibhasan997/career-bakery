@@ -4,11 +4,14 @@ import { useNavigate } from 'react-router-dom';
 const LocalStorageCart = ({ jobDetail }) => {
     const { id, company_logo, job_title, remote_or_onsite, location, fulltime_or_partTime, company_name, location_img } = jobDetail
 
-    // const navigateDetails = useNavigate()
-    // onClick={() => navigateDetails('/cartDetails')}
+    const navigateDetails = useNavigate()
+    const handleBack =()=>{
+        navigateDetails(-1)
+    }
+    
 
     return (
-        <div className='border border-gray-300 p-8 w-full flex gap-10 mb-5'>
+        <div className='border border-gray-300 p-8 w-full flex items-center gap-10 mb-5 rounded'>
             <div className='w-28 h-28'>
                 <img className='' src={company_logo} alt="" />
             </div>
@@ -26,7 +29,7 @@ const LocalStorageCart = ({ jobDetail }) => {
                     </div>
                 </div>
                 <div className='flex flex-col '>
-                    <button  className='my-btn my-4 mr-auto'>View Details</button>
+                    <button onClick={handleBack}  className='my-btn my-4 mr-auto'>View Details</button>
                 </div>
             </div>
         </div>

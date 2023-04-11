@@ -18,7 +18,9 @@ const Navbar = () => {
                                 <li className='mr-3'> <Link to='/blogs' >Blog</Link> </li>
                             </ul>
                         </div>
-                        <a className=" text-xl lg:text-3xl font-extrabold text-[#1A1919;]  "><span className='text-blue-600'>C</span>areer<span className='text-blue-600'>B</span>akery</a>
+                        <Link to='/' className=" text-xl lg:text-3xl font-extrabold text-[#1A1919;]  ">
+                            <span className='text-blue-600'>C</span>areer<span className='text-blue-600'>B</span>akery
+                            </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="  menu-horizontal px-1 font-bold text-lg ">
