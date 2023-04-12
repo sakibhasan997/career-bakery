@@ -10,7 +10,7 @@ const Header = () => {
                     <button className='my-btn'>Get Started</button>
                 </div>
                 <div>
-                    <img src="/public/P3OLGJ1 copy 1.png" alt="" />
+                    <img src="P3OLGJ1 copy 1.png" alt="" />
                 </div>
             </div>
         </>

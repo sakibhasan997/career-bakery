@@ -10,10 +10,8 @@ const Footer = () => {
                         <br />
                         <p className='font-normal text-base text-[#757575]'>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
                         <br />
-                        <div className='flex items-center gap-2 w-10 h-10'>
-                            <img src="/public/icons/facebook (1).png" alt="" />
-                            <img src="/public/icons/twitter.png" alt="" />
-                            <img src="/public/icons/instagram.png" alt="" />
+                        <div className='flex items-center gap-2 w-30 h-10'>
+                           <img src="/public/assets/Icons/Group 9969.png" alt="" />
                         </div>
                     </div>
                     <div>
