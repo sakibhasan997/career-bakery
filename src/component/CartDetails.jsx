@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { addToDb } from '../utils/fakeDB';
+import { BeakerIcon, phone, EnvelopeIcon, MapIcon, CurrencyDollarIcon, calender  } from '@heroicons/react/24/solid'
 
 const CartDetails = ({ }) => {
 
@@ -18,12 +19,14 @@ const CartDetails = ({ }) => {
     const [details, setDetails] = useState([]);
     const dynamic = useParams();
     const dynamicId = dynamic.id;
+    console.log(dynamicId);
     const data = useLoaderData();
     useEffect(() => {
         const detailsData = data.find((dt) => dt.id === dynamicId);
         setDetails(detailsData)
     }, [])
-    const { id, job_description, job_responsibility, educational_requirements, location, experiences, company_name, contact_info, job_title, salary, email, phone } = details
+    console.log(details);
+    const { id, job_description, job_responsibility, educational_requirements, location, experiences,  job_title, salary, email, phone } = details
 
     return (
         <>
@@ -71,7 +74,9 @@ const CartDetails = ({ }) => {
                                 <span className='font-bold text-lg text-[#1A1919]'>Email: </span>
                                 <span className='font-semibold text-lg text-[#757575]'>{email}</span>
                             </p>
-                            <p><span className='font-bold text-lg text-[#1A1919]'>Address: </span>  <span className='font-semibold text-lg text-[#757575]'>{location}</span></p>
+                            <p>
+                                
+                                <span className='font-bold text-lg text-[#1A1919]'>Address: </span>  <span className='font-semibold text-lg text-[#757575]'>{location}</span></p>
                         </div>
                         <div className='w-3/4 mx-auto'>
                             <span>
