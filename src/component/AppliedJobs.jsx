@@ -33,7 +33,7 @@ const AppliedJobs = () => {
                         </h2>
                         <ul className='flex flex-col  my-3'>
                             {
-                                cartArray.map(jobDetail => (<LocalStorageCart
+                                filterData.map(jobDetail => (<LocalStorageCart
                                     key={jobDetail.id}
                                     jobDetail={jobDetail}
                                 ></LocalStorageCart>))

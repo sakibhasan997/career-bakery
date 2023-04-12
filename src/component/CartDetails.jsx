@@ -14,6 +14,7 @@ const CartDetails = ({ }) => {
     // handle add to card
     const applyCartHandle = (id) => {
         addToDb(id)
+        console.log(id);
     }
 
     const [details, setDetails] = useState([]);
