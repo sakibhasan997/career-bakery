@@ -19,13 +19,13 @@ const CartDetails = ({ }) => {
     const [details, setDetails] = useState([]);
     const dynamic = useParams();
     const dynamicId = dynamic.id;
-    console.log(dynamicId);
+    // console.log(dynamicId);
     const data = useLoaderData();
     useEffect(() => {
         const detailsData = data.find((dt) => dt.id === dynamicId);
         setDetails(detailsData)
     }, [])
-    console.log(details);
+    // console.log(details);
     const { id, job_description, job_responsibility, educational_requirements, location, experiences,  job_title, salary, email, phone } = details
 
     return (

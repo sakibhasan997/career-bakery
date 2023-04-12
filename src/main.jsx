@@ -8,11 +8,11 @@ import {
 import Home from './component/Home';
 import App from './App';
 import Statistics from './component/Statistics';
-import AppliedJobs from './component/AppliedJobs';
 import Blog from './component/Blog';
 import CartDetails from './component/CartDetails';
-import ErrorPage from './component/Errorpage';
 import { jobAndCartData } from './loaders/getCart&jobData';
+import ErrorPage from './component/ErrorPage';
+import AppliedJobs from './component/AppliedJobs';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: '/cartDetails/:id',
         element: <CartDetails/>,
-        loader: () => fetch('/Featured.json'),
+        loader: () => fetch(`/Featured.json`),
       },
       {
         path: '/statistics',

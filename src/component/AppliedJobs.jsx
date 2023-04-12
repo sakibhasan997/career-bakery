@@ -14,9 +14,7 @@ const AppliedJobs = () => {
         });
         setFilterData(update)
     }
-    const handleOnside = () => {
 
-    }
 
     return (
         <>
@@ -25,8 +23,8 @@ const AppliedJobs = () => {
             </div>
             <div className='my-container my-10'>
                 <div className='flex items-center justify-end gap-3 my-3 mr-auto'>
-                    <button onClick={()=>handleRemote('Remote')} className=' my-linear' >Remote</button>
-                    <button onClick={()=>handleRemote('Onsite')} className='my-linear'>Full Time</button>
+                    <button onClick={() => handleRemote('Remote')} className=' my-linear' >Remote</button>
+                    <button onClick={() => handleRemote('Onsite')} className='my-linear'>Full Time</button>
                 </div>
                 <div className=' min-h-screen flex  items-center justify-center  text-gray-900 '>
                     <div className='flex flex-col w-[1000px]  p-8 space-y-4 sm:p-10'>
@@ -35,7 +33,7 @@ const AppliedJobs = () => {
                         </h2>
                         <ul className='flex flex-col  my-3'>
                             {
-                                filterData.map(jobDetail => (<LocalStorageCart
+                                cartArray.map(jobDetail => (<LocalStorageCart
                                     key={jobDetail.id}
                                     jobDetail={jobDetail}
                                 ></LocalStorageCart>))
