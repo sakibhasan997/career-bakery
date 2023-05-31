@@ -1,9 +1,13 @@
-This is my project ( Career-Bakery)
-Hosted in Netlify -> [Career Bakery](https://incredible-babka-88befd.netlify.app/)
+# This is my project ( Career Bakery)
 
-Career Bakery
+- Hosted in Netlify -> [Career Bakery](https://incredible-babka-88befd.netlify.app/)
 
-technologies (frameworks, libraries)
-React js
-react router
-tailwind css
+
+
+- Career Bakery
+
+
+## technologies (frameworks, libraries) 
+- react js
+- react router
+- tailwind css
